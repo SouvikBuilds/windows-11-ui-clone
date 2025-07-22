@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('https://4kwallpapers.com/images/wallpapers/windows-11-stock-3d-5689x2400-10781.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+}
+
+.taskbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f3f3f3;
+    gap: 20px;
+    padding: 5px;
+    height: 40px;
+}
+
+.taskbar img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.25s cubic-bezier(0.25, 1.5, 0.5, 1);
+
+}
+
+.taskbar img:hover {
+    transform: scale(2);
+
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.dateTime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.icons img {
+    height: 40px;
+    width: 40px;
+}
+
+.thisPc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 20;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.thisPc:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+.startPopUp {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 170px; */
+    margin-top: 1200px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+.startMenu {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 500px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.start-search {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    width: 98%;
+}
+
+.pinned-section p,
+.recommended-section p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.pinned-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.app img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.rec-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rec-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.rec-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.rec-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rec-sub {
+    font-size: 12px;
+    color: gray;
+}
+
+.user-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.power img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+}
