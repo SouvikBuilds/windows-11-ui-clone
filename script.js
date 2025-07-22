@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const startButton = document.getElementById("startButton")
     startButton.addEventListener("click", function () {
         const startPopUp = document.querySelector(".startPopUp")
-        if (startPopUp.style.marginTop === "1200px") {
-            startPopUp.style.marginTop = "170px"
+        if (startPopUp.style.top === "1200px") {
+            startPopUp.style.top = "170px"
             startPopUp.style.transition = "0.5s all ease"
         } else {
-            startPopUp.style.marginTop = "1200px"
+            startPopUp.style.top = "1200px"
             startPopUp.style.transition = "0.5s all ease"
         }
     })
